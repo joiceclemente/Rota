@@ -303,16 +303,16 @@
 
 
 
-        @media screen and (min-width: 500px) and (max-width: 1200px) {
+        @media screen and (min-width: 300px) and (max-width: 500px) {
             body {
                 width: 100%;
-                height: 100vh;
                 overflow-x: hidden;
             }
 
             #msg {
-                margin-top: 5px;
+                margin-top: 10px;
                 height: 80px;
+                margin-bottom: 110px;
                 font-size: 0.9em;
                 justify-content: center;
                 align-items: center;
@@ -321,25 +321,27 @@
             #carta {
                 top: -50px;
                 justify-content: center;
-                left: 50%;
+                left: 60%;
+                width: 700px;
             }
 
             #emb {
-                
                 top: 320px;
-                left: -760% ;
+                left: -820% ;
             }
 
             #sort {
                 top: 260px;
-                left: -630% ;
+                left: -690% ;
             }
 
             #obs {
+                width: 300px;
                 display: flex;
                 top: 135%;
-                left: -34.5%;
+                left: -27%;
                 font-size: 1em;
+                margin-bottom: 0px;
             }
 
 
