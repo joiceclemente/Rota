@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" link> <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <title>Sua Numerologia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <link rel="stylesheet" href="num.css">
+</head>
+
+
+<body>
+
+    <main id="elementMain">
+        <h2>Bem-vindo à Sessão de Numerologia Personalizada!</h2>
+        <h3>Nesse espaço, oferecemos uma experiência única e personalizada para explorar as energias ocultas associadas à sua data de nascimento e ao seu nome. A numerologia é uma antiga prática que atribui significados profundos aos números, revelando insights valiosos sobre sua personalidade, habilidades, desafios e oportunidades na vida.
+        </h3>
+
+        <div id="nome">
+            <label for="iNome" class="info">Nome: </label>
+            <input type="text" name="nome" id="iNome" class="caixa" placeholder="Marina Aragão" required max="70">
+        </div>
+
+        <div id="idade">
+            <label for="iDade" class="info">Data de Nascimento: </label>
+            <input type="date" name="idade" id="iDade" class="caixa" placeholder="xx/xx/xxxx">
+        </div>
+
+        <button class="but" onclick="pegarValor()">Calcular</button>
+    </main>
+
+    <section id="newS">
+
+    </section>
+
+    <script src="num.js"></script>
+
+</body>
+</html>

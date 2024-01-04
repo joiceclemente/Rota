@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Twinkle+Star&display=swap');
+
+
+:root {
+    --primary-color: #333;
+    --second-color: #FFF;
+    --color-hover: #505050;
+    
+    --logo: 'Twinkle Star', cursive;
+    --subcamadas: 'Gruppo', sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/fundo.principal.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+div {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+h2 {
+    position: relative;
+    font-family: var(--logo);
+    display: flex;
+    justify-content: center;
+    color: var(--second-color);
+    margin-bottom: 5px;
+    font-size: 3em;
+    left: 15%;
+    top: 50%;
+}
+
+img {
+    height: 70%;
+    width: 15%;
+    color: var(--second-color);
+    margin-right: 20px;
+    transform: rotate(-25deg);
+    position: absolute;
+    top: 15%;
+    left: -20%;
+}
+
+
+nav {
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+nav a {
+    font-family: var(--subcamadas);
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    background-color: var(--second-color);
+    color: var(--color-hover);
+}
+
+#container {
+    display: none;
+    background-color: var(--second-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    top: 65%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+section {
+    max-height: 500px;
+    min-width: 1000px;
+    padding: 5px;
+}
+
+section p {
+    margin: 5px;
+    color: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align: left;
+}
+
+button {
+    background-color: var(--primary-color);   
+    padding: 8px;
+    border: 2px solid var(--second-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+}
+
+.tagA {
+    color: var(--second-color);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 991px) {
+    body {
+        background-image: url(img/fundo.principal.svg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    #nav-bar {
+        position: relative;
+    }
+
+    #section1 {
+        position: absolute;
+        top: 4%;
+        left: -55%;
+    }
+
+    #section2 {
+        position: absolute;
+        top: 4%;
+        left: -12%;
+    }
+    #section3 {
+        position: absolute;
+        top: 4%;
+        left: 80%;
+        width: 240px;
+    }
+
+    section {
+        max-height: 500px;
+        min-width: 900px;
+        padding: 5px;
+    }
+
+    section p {
+        font-size: .8em;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 990px) {
+    body {
+        background-image: url(img/fundo.principal.svg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 2em;
+        top: -100px;
+    }
+    
+
+    #nav-bar {
+        position: relative;
+        top: -95px;
+        font-size: 1em;
+    }
+
+    #section1 {
+        position: absolute;
+        top: 4px;
+        left: -55%;
+    }
+
+    #section2 {
+        position: absolute;
+        top: 4px;
+        left: -16%;
+    }
+    #section3 {
+        position: absolute;
+        top: 4px;
+        left: 75%;
+        width: 150px;
+    }
+
+    #container {
+        top: 45%;
+    }
+
+    section {
+        position: relative;
+        max-height: 350px;
+        min-width: 400px;
+        padding: 0px;
+    }
+
+    section p {
+        font-size: .8em;
+    }
+
+}
