@@ -164,7 +164,7 @@ button:hover {
 
 }
 
-@media screen and (min-width: 500px) and (max-width: 990px) {
+@media screen and (min-width: 200px) and (max-width: 990px) {
     body {
         background-image: url(img/fundo.principal.svg);
         background-size: cover;
