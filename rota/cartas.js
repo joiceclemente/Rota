@@ -41,8 +41,9 @@ function sortear() {
         newSection.classList.add('newSection')
         elementMain.classList.add('hidden');
 
-        const divCarta = document.createElement('div');
-        divCarta.classList.add('divCarta');
+        const divBut = document.createElement('div');
+        divBut.classList.add('divBut');
+        newSection.appendChild(divBut);
 
         const imgCon = document.createElement('div');
         const imagemCarta = document.createElement('img');
@@ -50,7 +51,7 @@ function sortear() {
         imgCon.appendChild(imagemCarta);
         imgCon.classList.add('cartaTarot');
         imagemCarta.classList.add('imagemCarta');
-        divCarta.appendChild(imgCon);
+        newSection.appendChild(imgCon);
 
         const txtCon = document.createElement('div');
         const conselho = document.createElement('p');
@@ -63,11 +64,11 @@ function sortear() {
         p.textContent = cartaSorteada.conselho
         txtCon.appendChild(p)
         p.classList.add('parag')
-        divCarta.appendChild(txtCon);
+        newSection.appendChild(txtCon);
         
         const containerCristalErva = document.createElement('div');
         containerCristalErva.classList.add('containerCristalErva');
-        divCarta.appendChild(containerCristalErva)
+        newSection.appendChild(containerCristalErva)
         
         
         const cristal = document.createElement('div');
@@ -92,9 +93,6 @@ function sortear() {
         iErva.classList.add('iErva');
         containerCristalErva.appendChild(erva);
         
-        const divBut = document.createElement('div');
-        divBut.classList.add('divBut');
-        newSection.appendChild(divBut);
 
         const buttonInicio = document.createElement('button');
         buttonInicio.classList.add('but');
@@ -118,7 +116,6 @@ function sortear() {
         divBut.appendChild(buttonTarot);
 
         newSection.style.display = 'relative';
-        newSection.appendChild(divCarta);
 
     } else {
         alert('Por favor, embaralhe as cartas primeiro');
