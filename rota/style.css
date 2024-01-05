@@ -169,7 +169,7 @@ button:hover {
         background-image: url(img/fundo.principal.svg);
         background-size: cover;
         background-position: center;
-        min-height: 100vh;
+        height: 100vh;
         position: relative;
     }
 

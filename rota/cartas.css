@@ -306,16 +306,20 @@
         @media screen and (min-width: 300px) and (max-width: 500px) {
             body {
                 width: 100%;
-                overflow-x: hidden;
+                height: 100vh;
+                /* overflow: hidden; */
             }
 
+
             #msg {
-                margin-top: 10px;
-                height: 80px;
-                margin-bottom: 110px;
-                font-size: 0.9em;
+                font-size: .8em;
                 justify-content: center;
                 align-items: center;
+                margin-top: 10px;
+                margin-bottom: 100px;
+                height: 85px;
+                width: 380px;
+                
             }
 
             #carta {
@@ -323,6 +327,7 @@
                 justify-content: center;
                 left: 60%;
                 width: 700px;
+                
             }
 
             #emb {
@@ -344,25 +349,49 @@
                 margin-bottom: 0px;
             }
 
+            .divCarta {
+                display: block;
+                justify-content: center;
+                position: relative;
+                left: 25%;
+            }
 
             .cartaTarot {
-                margin-left: -20px;
-                top: 10%;
+                position: absolute;
+                width: 220px;
+                top:10%;
+            
             }
             
             .containerConselho {
                 font-size: 1.2em;
-                margin-left: -140px;
-                position: relative;
-                left: 45%;
-                top: 10%;
+                position: absolute;
+                margin-left: -90px;
+                top: 60%;
 
             }
 
             .containerCristalErva {
-                position: absolute;
-                top: 70%;
-                margin-left: -160px;
+                position: relative;
+                left: -30%;
+                top: 95%;
+                height: 600px;
+            }
+
+            .iErva {
+                margin-top: 400px;
+                margin-left: -215px;
+
+            }
+
+            .txtE {
+                margin-top: 270px;
+                margin-left: -110px;
+            }
+
+            .txtC {
+                margin-top: -20px;
+                margin-left: 110px;
             }
 
         } 
