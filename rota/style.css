@@ -23,16 +23,9 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height:auto;
+    width: 100%;
+    height:100vh;
 }
-
-div {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 
 h2 {
     position: relative;
@@ -42,8 +35,9 @@ h2 {
     color: var(--second-color);
     margin-bottom: 5px;
     font-size: 3em;
-    left: 15%;
-    top: 50%;
+    left: 35%;
+    top: 35%;
+    width: 30%;
 }
 
 img {
@@ -54,22 +48,39 @@ img {
     transform: rotate(-25deg);
     position: absolute;
     top: 15%;
-    left: -20%;
+    left: -5%;
 }
 
 
 nav {
-    padding: 10px;
     font-size: 1.5em;
     text-align: center;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    top: 40%;
+    left: 32%;
+
+}
+
+#section1 {
+    margin-left: 60%;
+}
+
+#section2 {
+    margin-left: 45%;
+}
+
+#section3 {
+    margin-left: -28%;
 }
 
 nav a {
+    padding: 10px;
     font-family: var(--subcamadas);
     color: var(--second-color);
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
     border-radius: 5px;
     transition-duration: .5s;
 }
@@ -79,14 +90,16 @@ nav a:hover {
     color: var(--color-hover);
 }
 
+
 #container {
     display: none;
     background-color: var(--second-color);
     border: 2px solid var(--primary-color);
     border-radius: 10px;
-    top: 65%;
-    transform: translate(-50%);
+    width: 80%;
     text-align: center;
+    margin-top: 20%;
+    margin-left: 10%;
 }
 
 section {
@@ -121,6 +134,10 @@ button:hover {
     width: 100%;
     height: 100%;
 }
+
+
+
+
 
 @media screen and (min-width: 991px) {
     body {
@@ -164,58 +181,65 @@ button:hover {
 
 }
 
-@media screen and (min-width: 200px) and (max-width: 990px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
     body {
         background-image: url(img/fundo.principal.svg);
         background-size: cover;
         background-position: center;
         height: 100vh;
-        position: relative;
     }
 
     h2 {
+        width: 210px;
         font-size: 2em;
-        top: -100px;
+        top: 30%;
+        left: 30%;
+    }
+
+    img {
+        width: 20%;
+        height: 100%;
+        left: -20%;
+    }
+    
+    nav {
+        font-size: 1.4em;
+        text-align: center;
+        height: 50px;
+        width: 200px;
+        margin-top: 60%;
+        margin-left: 8%;
+    }
+    
+    #section1 {
+        margin-left: -2%;
+    }
+    
+    #section2 {
+        margin-left: 3%;
+    }
+    
+    #section3 {
+        margin-left: 4%;
     }
     
 
-    #nav-bar {
-        position: relative;
-        top: -95px;
-        font-size: 1em;
-    }
-
-    #section1 {
-        position: absolute;
-        top: 4px;
-        left: -55%;
-    }
-
-    #section2 {
-        position: absolute;
-        top: 4px;
-        left: -16%;
-    }
-    #section3 {
-        position: absolute;
-        top: 4px;
-        left: 75%;
-        width: 150px;
-    }
-
     #container {
-        top: 45%;
+        width: 90%;
+        margin-top: 2%;
+        display: block;
+        margin: 0 auto;
     }
 
     section {
         position: relative;
         max-height: 350px;
-        min-width: 400px;
+        min-width: 300px;
         padding: 0px;
     }
 
     section p {
-        font-size: .8em;
+        font-size: .9em;
     }
 
 }
