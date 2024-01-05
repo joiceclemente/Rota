@@ -316,32 +316,32 @@
     }
 
     #um {
-        left: 25%; 
-        transform: rotate(-25deg);
+        left: 15%; 
+        transform: rotate(-10deg);
         background-color: #FFF;
     }
 
     #dois {
         left: 20%; 
-        transform: rotate(-26deg);
+        transform: rotate(-10deg);
         background-color: #505050;
     }
 
     #tres {
-        left: 26%;  
-        transform: rotate(-26deg);
+        left: 25%;  
+        transform: rotate(-10deg);
         background-color: #FFF;  
     }
 
     #quatro {
-        left: 26%; 
-        transform: rotate(-24deg);
+        left: 30%; 
+        transform: rotate(-10deg);
         background-color: #505050; 
     }
 
     #cinco {
-        left: 28%; 
-        transform: rotate(-22deg);
+        left: 35%; 
+        transform: rotate(-10deg);
         background-color: #FFF;
     }
     

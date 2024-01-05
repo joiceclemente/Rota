@@ -227,7 +227,7 @@ button:hover {
     #container {
         width: 90%;
         margin-top: 2%;
-        display: block;
+        display: none;
         margin: 0 auto;
     }
 
