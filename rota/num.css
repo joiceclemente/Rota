@@ -285,30 +285,63 @@ main > h3 {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 990px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
 
-    .newPage {
-        overflow-x: hidden;
-    }
+    
 
     .info {
-        font-size: 1.5em;
-        left: 30%;
+        top: 80px;
+        font-size: 1.4em;
+        left: 20%;
     }
 
     .caixa {
-        width: 25%;
+        width: 33%;
         padding: 8px;
-        left: 30%;
+        left: 20%;
+        top: 80px
     }
 
     .but {
         left: 35%;
-        top: 200px;
+        top: 120px;
     }
 
     .divMD, .divMN {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin-left: -40px;
+        margin-top: -50px;
+        width: 90%;
+    }
+
+    .containerNome, .containerData {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+    }
+
+    .divNN, .divND {
+        text-align: center;
+        width: 70%;
+        left: 15%;
+    }
+
+    .numNormal, .numMestre {
+        font-size: 25em;
+        margin-top: 15px;
+        justify-content: center;
+        text-align: center;
+        left: 15%;
+
+    }
+
+    .arrayNome, .arrayData {
+        margin-top: -60px;
+        width: 80%;
+        left: 10%;
+        height: auto;
     }
     
 }
