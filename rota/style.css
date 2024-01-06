@@ -136,51 +136,6 @@ button:hover {
 }
 
 
-
-
-
-@media screen and (min-width: 991px) {
-    body {
-        background-image: url(img/fundo.principal.svg);
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-    }
-
-    #nav-bar {
-        position: relative;
-    }
-
-    #section1 {
-        position: absolute;
-        top: 4%;
-        left: -55%;
-    }
-
-    #section2 {
-        position: absolute;
-        top: 4%;
-        left: -12%;
-    }
-    #section3 {
-        position: absolute;
-        top: 4%;
-        left: 80%;
-        width: 240px;
-    }
-
-    section {
-        max-height: 500px;
-        min-width: 900px;
-        padding: 5px;
-    }
-
-    section p {
-        font-size: .8em;
-    }
-
-}
-
 @media screen and (min-width: 300px) and (max-width: 500px) {
     body {
         background-image: url(img/fundo.principal.svg);
@@ -194,11 +149,12 @@ button:hover {
         font-size: 2em;
         top: 30%;
         left: 30%;
+        padding-bottom: 30px;
     }
 
     img {
         width: 20%;
-        height: 100%;
+        height: auto;
         left: -20%;
     }
     
@@ -209,6 +165,7 @@ button:hover {
         width: 200px;
         margin-top: 60%;
         margin-left: 8%;
+        padding-top: 20px 0;
     }
     
     #section1 {

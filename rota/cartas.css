@@ -302,7 +302,6 @@
     #carta {
         width: 100%;
         height: 300px;
-        padding-top: 10px;
         margin-top: 90px;
         z-index: -1;
     }
@@ -312,7 +311,9 @@
         height: auto;
         border: 2px solid yellow;
         border-radius: 8px;
-        position: absolute[];
+        position: absolute;
+        display: block;
+        margin: 0 auto;
     }
 
     #um {
@@ -348,7 +349,12 @@
     .butEmbSort {
         width: 250px;
         height: 100px;
-        margin: 50px 10px 5px 60px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: 85%;
+        left: 70px;
+        /* padding-top: 120px; */
     }
 
     #obs {
@@ -391,13 +397,13 @@
 
     .iCristal {
        top: 40%;
-       margin-left: 25%;
+       margin-left: 30%;
 
     }
 
     .iErva {
         margin-top: 20%;
-        margin-left: 100px;
+        margin-left: 130px;
 
      }
 
@@ -406,6 +412,7 @@
         top: 4%;
         left: 32%;
         width: 200px;
+        height: 80px;
     }
 
     .txtE {
