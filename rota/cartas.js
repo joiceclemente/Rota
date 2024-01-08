@@ -66,32 +66,33 @@ function sortear() {
         p.classList.add('parag')
         newSection.appendChild(txtCon);
         
-        const containerCristalErva = document.createElement('div');
-        containerCristalErva.classList.add('containerCristalErva');
-        newSection.appendChild(containerCristalErva)
+        const containerCristal = document.createElement('div');
+        containerCristal.classList.add('containerCristal');
+        newSection.appendChild(containerCristal)
+
         
-        
-        const cristal = document.createElement('div');
         const txtC = document.createElement('p');
         txtC.textContent = 'Cristal: ' + cartaSorteada.cristal;
         const iCristal = document.createElement('img');
         iCristal.src = cartaSorteada.imgCristal;
-        containerCristalErva.appendChild(txtC);
+        containerCristal.appendChild(txtC);
         txtC.classList.add('txtC');
-        containerCristalErva.appendChild(iCristal);
+        containerCristal.appendChild(iCristal);
         iCristal.classList.add('iCristal');
-        containerCristalErva.appendChild(cristal);
 
-        const erva = document.createElement('div');
+
+        const containerErva = document.createElement('div');
+        containerErva.classList.add('containerErva');
+        newSection.appendChild(containerErva)
+
         const txtE = document.createElement('p');
         txtE.textContent = 'Erva: ' + cartaSorteada.erva;
         const iErva = document.createElement('img');
         iErva.src = cartaSorteada.imgErva;
-        containerCristalErva.appendChild(txtE);
+        containerErva.appendChild(txtE);
         txtE.classList.add('txtE');
-        containerCristalErva.appendChild(iErva);
+        containerErva.appendChild(iErva);
         iErva.classList.add('iErva');
-        containerCristalErva.appendChild(erva);
         
 
         const buttonInicio = document.createElement('button');
